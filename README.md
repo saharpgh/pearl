@@ -1,2 +1,2 @@
-# pearl
-my first website with js / not responsive
+# Satellite
+Our first web template using HTML, CSS, BOOTSTRAP, JS

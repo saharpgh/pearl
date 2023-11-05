@@ -1,0 +1,1872 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "mainregular";
+  src: url(../font/static/DancingScript-Regular.ttf);
+}
+@font-face {
+  font-family: "mainbold";
+  src: url(../font/static/DancingScript-SemiBold.ttf);
+}
+body {
+  overflow-x: hidden;
+}
+
+main {
+  width: 100%;
+  height: 1546.4vh;
+  overflow-x: hidden;
+  background: black;
+}
+main .header {
+  width: 100%;
+  height: 140vh;
+  background-image: url(../img/__1\ \(2\).jpg);
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+main .header .menu {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+}
+main .header .menu > span {
+  font-size: 28px;
+  transform: scaleX(1.4);
+  font-family: mainregular;
+  color: #f4f6fa;
+}
+main .header .menu > span > strong {
+  font-size: 45px;
+  font-weight: 100;
+}
+main .header .menu > div > span:nth-of-type(1) {
+  color: #f4f6fa;
+}
+main .header .menu > div > span:nth-of-type(2) {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: rgba(244, 246, 250, 0.4901960784);
+  font-weight: bold;
+  font-size: 15px;
+}
+main .header .all {
+  width: 100%;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 32% 32% 36%;
+  grid-template-rows: 22% 22% 22% 34%;
+  margin-top: -35vh;
+}
+main .header .all .pearls {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f4f6fa;
+}
+main .header .all .pearls > * {
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+main .header .all .pearls > span {
+  color: #caa2fe;
+}
+main .header .all .pearls > h1 {
+  font-family: mainbold;
+  font-size: 100px;
+  color: white;
+  margin-left: -120px;
+}
+main .header .all .pearls > h1 > strong {
+  margin: 0 20px;
+  margin-top: -50px;
+  transform: scaleX(1.4) scaleY(1.9);
+}
+main .header .all .pearls > h1:nth-of-type(2) {
+  margin-left: -200px;
+}
+main .header .all .titlesmall {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .header .all .titlesmall > img {
+  position: absolute;
+  left: -10%;
+  top: 0;
+  width: 80%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .header .all .titlesmall > p {
+  color: #254470;
+  position: absolute;
+  text-align: center;
+  width: 70%;
+  left: -5%;
+  height: 50%;
+  font-size: 16px;
+  font-family: mainregular;
+}
+main .header .all .pearlspic {
+  grid-row-start: 2;
+  grid-row-end: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .header .all .pearlspic > img {
+  width: 90%;
+  height: 90%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .header .all .title1, main .header .all .title2 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -120px;
+}
+main .header .all .title1 > h1, main .header .all .title2 > h1 {
+  margin-top: -30px;
+  text-align: center;
+  font-size: 100px;
+  font-family: mainbold;
+}
+main .header .all .title1 > h1 > strong, main .header .all .title2 > h1 > strong {
+  margin: 0 10px;
+  font-size: 170px;
+  font-weight: 100;
+}
+main .header .all .title1 > h1 .last, main .header .all .title2 > h1 .last {
+  font-size: 100px;
+  margin-left: -3%;
+}
+main .header .all .title1 > h1 .textpic, main .header .all .title2 > h1 .textpic {
+  font-size: 100px;
+  position: relative;
+  overflow: hidden;
+  z-index: 999;
+}
+main .header .all .title1 > h1 .textpic > img, main .header .all .title2 > h1 .textpic > img {
+  position: absolute;
+  width: 60%;
+  height: 51%;
+  border-radius: 50%;
+  transform: scaleY(1.2) rotate(35deg);
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 26%;
+  left: 7%;
+  z-index: -1;
+}
+main .header .all .title1 {
+  color: #caa2fe;
+}
+main .header .all .title2 {
+  color: #f4f6fa;
+}
+main .header .all .drive {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  position: relative;
+  padding-right: 200px;
+}
+main .header .all .drive > img {
+  position: absolute;
+  width: 40%;
+  height: 55%;
+  right: 20%;
+  top: 30%;
+}
+main .header .all .drive > p {
+  position: absolute;
+  width: 250px;
+  height: 50px;
+  color: #f4f6fa;
+  top: 53%;
+  right: 24%;
+  font-size: 15px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 600;
+}
+main .header .movingpearl {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  top: 46%;
+  left: 10.5%;
+}
+main .header .movingpearl > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .header .movingbottle {
+  position: absolute;
+  width: 300px;
+  height: 100px;
+  top: 15%;
+  right: -10%;
+  animation: bottle infinite linear alternate 1.5s;
+}
+main .header .movingbottle > img {
+  width: 100%;
+  height: 200%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .header .movinggrass {
+  position: absolute;
+  top: 40%;
+  left: 6%;
+  width: 600px;
+  height: auto;
+  animation: bottle infinite linear alternate 2s;
+}
+main .header .movinggrass > img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .header .movingfish {
+  position: absolute;
+  bottom: 30%;
+  right: -3%;
+  width: 100px;
+  animation: fish infinite linear 10s;
+}
+main .header .movingfish > img {
+  width: 100%;
+}
+@keyframes bottle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-15deg);
+  }
+}
+@keyframes fish {
+  0% {
+    bottom: 30%;
+    right: -3%;
+  }
+  5% {
+    bottom: 30%;
+    right: -3%;
+  }
+  30% {
+    bottom: 45%;
+    right: 30%;
+  }
+  100% {
+    bottom: 100%;
+    right: 103%;
+  }
+}
+main .pearlbirth {
+  width: 100%;
+  height: 260vh;
+  background-color: #f1f3f4;
+  overflow-x: hidden;
+  position: relative;
+}
+main .pearlbirth .title3 {
+  position: relative;
+  width: 98%;
+  text-align: center;
+  color: #ab89d6;
+  font-size: 100px;
+  font-family: mainbold;
+  margin-left: -8%;
+  z-index: 2;
+  letter-spacing: 10px;
+}
+main .pearlbirth .title3 > strong {
+  font-size: 190px;
+  font-weight: 100;
+}
+main .pearlbirth .title4 {
+  position: relative;
+  z-index: 2;
+  width: 67%;
+  text-align: center;
+  color: #ab89d6;
+  font-size: 100px;
+  font-family: mainbold;
+  margin-left: 24%;
+  margin-top: -85px;
+  color: #244579;
+  letter-spacing: 10px;
+}
+main .pearlbirth .title4 > strong {
+  font-size: 190px;
+  font-weight: 100;
+}
+main .pearlbirth .row1 {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+main .pearlbirth .row1 .pearlmoving {
+  width: 50%;
+  position: relative;
+  z-index: 2;
+}
+main .pearlbirth .row1 .pearlmoving > figure {
+  position: absolute;
+  top: 20%;
+  left: 90%;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+main .pearlbirth .row1 .pearlmoving > figure > img {
+  width: 80%;
+  height: 80%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main .pearlbirth .row1 .pearlmoving > figure > picture {
+  position: absolute;
+  left: 35%;
+  top: 40%;
+}
+main .pearlbirth .row1 .pearlmoving > figure > picture > img {
+  width: 35px;
+  height: 35px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .pearlbirth .row1 .suggestion {
+  width: 50%;
+  margin-left: 30%;
+  position: relative;
+}
+main .pearlbirth .row1 .suggestion > figure {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+main .pearlbirth .row1 .suggestion > figure > p {
+  text-align: left;
+  position: absolute;
+  width: 40%;
+  height: 80%;
+  font-family: mainregular;
+  font-size: 17px;
+  top: 30%;
+  left: 10%;
+}
+main .pearlbirth .row1 .suggestion > figure > img {
+  width: 80%;
+  height: 80%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main .pearlbirth .row1 .suggestion > img {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 37%;
+  right: 25%;
+}
+main .pearlbirth .row2 {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+}
+main .pearlbirth .row2 > div {
+  width: 60%;
+  padding: 5% 3.5% 0 35%;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+main .pearlbirth .row2 > div > h4 {
+  white-space: pre-line;
+  color: #475264;
+  font-size: 20px;
+}
+main .pearlbirth .row2 > div > p {
+  margin-top: 20px;
+  color: rgba(71, 82, 100, 0.9333333333);
+  font-size: 15px;
+}
+main .pearlbirth .row2 > figure {
+  width: 40%;
+  height: 80%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: -5%;
+  top: 20%;
+}
+main .pearlbirth .row2 > figure > img {
+  position: absolute;
+  width: 70%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .pearlbirth .row3 {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+main .pearlbirth .row3 > figure {
+  width: 60%;
+}
+main .pearlbirth .row3 > figure > img {
+  margin-left: 55%;
+  width: 30%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .pearlbirth .row3 > div {
+  width: 40%;
+  margin-top: 5%;
+  padding: 0 15% 0 5%;
+}
+main .pearlbirth .row3 > div > h4 {
+  white-space: pre-line;
+  color: #475264;
+  font-size: 20px;
+}
+main .pearlbirth .row3 > div > p {
+  margin-top: 20px;
+  color: rgba(71, 82, 100, 0.9333333333);
+  font-size: 15px;
+}
+main .pearlbirth .row4 {
+  width: 100%;
+  height: 240px;
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+}
+main .pearlbirth .row4 > div {
+  width: 18%;
+  height: 100%;
+  margin: 2% 34% 0 33%;
+}
+main .pearlbirth .row4 > div > h4 {
+  white-space: pre-line;
+  color: #475264;
+  font-size: 20px;
+}
+main .pearlbirth .row4 > div > p {
+  margin-top: 20px;
+  color: rgba(71, 82, 100, 0.9333333333);
+  font-size: 15px;
+}
+main .pearlbirth .row4 > figure {
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 10%;
+}
+main .pearlbirth .row4 > figure > img {
+  width: 40%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .pearlbirth .row4 > img {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  right: 18%;
+  top: 20%;
+  animation: star infinite 10s;
+}
+@keyframes star {
+  0% {
+    transform: rotate(0deg);
+  }
+  0% {
+    transform: rotate(360deg);
+  }
+}
+main .movingcloud {
+  position: absolute;
+  width: 1000px;
+  top: -5vh;
+  left: -100%;
+  z-index: 0;
+}
+main .movingcloud > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .movinggrassblue {
+  position: absolute;
+  width: 600px;
+  height: 700px;
+  top: 110vh;
+  left: -20%;
+  animation: bottle infinite linear alternate 2s;
+}
+main .movinggrassblue > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .movinggrassgreen {
+  position: absolute;
+  width: 600px;
+  height: 500px;
+  right: -20%;
+  top: 350vh;
+  z-index: 10;
+  animation: bottle infinite linear alternate 2s;
+}
+main .movinggrassgreen > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .bubble1 {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  top: 290vh;
+  left: 2%;
+}
+main .bubble1 > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .bubble2 {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 260vh;
+  left: 10%;
+}
+main .bubble2 > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .bubble3 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 430vh;
+  right: 20%;
+  z-index: 99;
+}
+main .bubble3 > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .toppic, main .bottompic {
+  position: absolute;
+  width: 120%;
+}
+main .toppic > img, main .bottompic > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .toppic {
+  left: -1%;
+  top: 109.1vh;
+  transform: rotateY(180deg);
+}
+main .bottompic {
+  transform: rotateZ(180deg);
+  top: 399vh;
+  left: -1%;
+  z-index: 2;
+}
+main .crown {
+  width: 100%;
+  margin-top: 10vh;
+  height: 136vh;
+  background-image: url(../img/__1\ \(2\).jpg);
+  position: relative;
+}
+main .crown .wave {
+  position: absolute;
+  width: 100%;
+  height: 350px;
+  z-index: 1;
+}
+main .crown .wave > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .crown .wave1 {
+  width: 105%;
+  bottom: -11%;
+  z-index: 4;
+  left: -10%;
+  animation: wave2 1s infinite alternate;
+}
+main .crown .wave2 {
+  height: 400px;
+  bottom: -11%;
+  z-index: 3;
+  left: -10%;
+  animation: wave1 1s infinite alternate;
+}
+main .crown .wave3 {
+  z-index: 1;
+  bottom: 5%;
+  animation: wave1 1s infinite alternate;
+}
+@keyframes wave1 {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -30px;
+  }
+}
+@keyframes wave2 {
+  100% {
+    left: 0px;
+  }
+  0% {
+    left: -30px;
+  }
+}
+main .crown .person {
+  position: absolute;
+  width: 900px;
+  height: 900px;
+  z-index: 2;
+  top: 65vh;
+  left: 15%;
+}
+main .crown .person > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .crown .cloud1, main .crown .cloud2 {
+  position: absolute;
+  width: 500px;
+  height: 250px;
+  top: 30vh;
+}
+main .crown .cloud1 > img, main .crown .cloud2 > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .crown .cloud1 {
+  left: -37%;
+}
+main .crown .cloud2 {
+  left: 100%;
+}
+main .crown .stone {
+  position: absolute;
+}
+main .crown .stone > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .crown .stone1 {
+  width: 30px;
+  height: 30px;
+  transform: rotateY(180deg);
+  top: 67.2vh;
+  left: 48.1%;
+}
+main .crown .stone2 {
+  width: 25px;
+  height: 25px;
+  top: 70.2vh;
+  left: 45.7%;
+}
+main .crown .stone3 {
+  width: 15px;
+  height: 15px;
+  top: 75.4vh;
+  left: 43.6%;
+}
+main .crown .stone4 {
+  width: 18px;
+  height: 18px;
+  top: 72.8vh;
+  left: 44.25%;
+}
+main .crown .stone5 {
+  width: 25px;
+  height: 25px;
+  top: 67.7vh;
+  left: 50.4%;
+  transform: rotate(10deg);
+}
+main .crown .stone6 {
+  width: 17px;
+  height: 17px;
+  top: 68.5vh;
+  left: 52.6%;
+}
+main .crown .stone7 {
+  width: 17px;
+  height: 17px;
+  top: 70.6vh;
+  left: 53.9%;
+  transform: rotate(2deg);
+}
+main .crown .stone8 {
+  width: 13px;
+  height: 14px;
+  top: 76.8vh;
+  left: 53%;
+  z-index: 99;
+}
+main .crown .stone9 {
+  width: 13px;
+  height: 13.5px;
+  top: 80vh;
+  left: 46.5%;
+  z-index: 99;
+}
+main .crown .stone10 {
+  width: 5px;
+  height: 5px;
+  top: 76.9vh;
+  left: 49.3%;
+  z-index: 99;
+}
+main .crown .stone11 {
+  width: 5px;
+  height: 5px;
+  top: 76.4vh;
+  left: 50.5%;
+  z-index: 99;
+}
+main .crown .stone12 {
+  width: 5px;
+  height: 5px;
+  top: 77.9vh;
+  left: 50.1%;
+  z-index: 99;
+}
+main .toppic2 {
+  position: absolute;
+  left: -1%;
+  top: 535vh;
+  transform: rotateY(180deg);
+  z-index: 10;
+}
+main .bodys {
+  width: 100%;
+  position: relative;
+  height: 210vh;
+  background-color: #f1f3f4;
+}
+main .bodys .title5 {
+  margin-top: 135px;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-wrap: nowrap;
+}
+main .bodys .title5 > p {
+  width: 100px;
+  height: 170px;
+  margin-left: -30%;
+  color: #caa2fe;
+}
+main .bodys .title5 > h2 {
+  width: 700px;
+  height: 280px;
+  font-family: mainbold;
+  font-size: 110px;
+  color: #ab89d6;
+  letter-spacing: 5px;
+}
+main .bodys .title5 > h2 > strong {
+  font-size: 200px;
+  font-weight: 100;
+}
+main .bodys .title6, main .bodys .title7 {
+  width: 100%;
+  height: 100px;
+  font-size: 120px;
+  font-family: mainbold;
+  padding-left: 30%;
+  margin-top: -11%;
+  letter-spacing: 5px;
+  color: #254470;
+}
+main .bodys .title6 > strong, main .bodys .title7 > strong {
+  font-size: 200px;
+  font-weight: 100;
+}
+main .bodys .title7 {
+  margin-top: 2% !important;
+  padding-left: 29%;
+}
+main .bodys > div:nth-of-type(4) {
+  width: 100%;
+  height: 100px;
+  margin-top: 9%;
+  padding: 0 50% 0 31%;
+  white-space: break-spaces;
+  font-size: 20px;
+  color: #475264;
+}
+main .bodys .middle {
+  width: 100%;
+  height: 640px;
+  margin-top: 10%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+main .bodys .middle > figure {
+  width: 70%;
+  position: relative;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .bodys .middle > figure > img {
+  width: 80%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .bodys .middle > div {
+  width: 50%;
+  padding: 12% 13% 0 5%;
+}
+main .bodys .middle > div > h5 {
+  font-size: 18px;
+  color: #254470;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bold;
+}
+main .bodys .middle > div > p:nth-of-type(1) {
+  margin-top: 7%;
+  font-size: 15px;
+  color: #475264;
+}
+main .bodys .middle > div > p:nth-of-type(2) {
+  margin-top: 7%;
+  font-size: 15px;
+  color: #475264;
+}
+main .bodys .seaanimal {
+  position: absolute;
+  width: 350px;
+  height: auto;
+  bottom: -59vh;
+  left: -5%;
+}
+main .bodys .seaanimal > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .bodys .fish2 {
+  position: absolute;
+  width: 120px;
+  height: auto;
+  top: 48vh;
+  left: 15%;
+  animation: fish2 infinite 25s;
+}
+main .bodys .fish2 > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@keyframes fish2 {
+  0% {
+    top: 48vh;
+    left: 15%;
+  }
+  20% {
+    top: 78vh;
+    left: 23%;
+  }
+  22% {
+    top: 78vh;
+    left: 23%;
+  }
+  42% {
+    top: 108vh;
+    left: 31%;
+  }
+  62% {
+    top: 108vh;
+    left: 62%;
+    transform: rotate(-65deg);
+  }
+  64% {
+    top: 108vh;
+    left: 62%;
+    transform: rotate(-65deg);
+  }
+  82% {
+    top: 78vh;
+    left: 80%;
+    transform: rotate(-65deg);
+  }
+  84% {
+    top: 78vh;
+    left: 80%;
+    transform: rotate(-65deg);
+  }
+  100% {
+    top: 48vh;
+    left: 112%;
+    transform: rotate(-65deg);
+  }
+}
+main .bodys .fish3 {
+  position: absolute;
+  width: 300px;
+  height: auto;
+  top: 50vh;
+  left: 2%;
+}
+main .bodys .fish3 > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .bodys .bibble4 {
+  position: absolute;
+  top: 20vh;
+  right: 12%;
+}
+main .bodys .bibble5 {
+  position: absolute;
+  width: 100px;
+  top: 50vh;
+  right: 7%;
+}
+main .bodys .bibble5 > img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .bodys .bibble6 {
+  position: absolute;
+  width: 50px;
+  top: 72vh;
+  right: 14%;
+}
+main .bodys .bibble6 > img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .bodys .boll {
+  position: absolute;
+  width: 45px;
+  top: 72.3vh;
+  right: 14.2%;
+}
+main .bodys .boll > img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .mountain {
+  position: absolute;
+  width: 100%;
+  height: 260px;
+  top: 755.7vh;
+  z-index: 999;
+}
+main .mountain > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .years {
+  width: 100%;
+  height: 450vh;
+  background-image: url(../img/__1\ \(3\).jpg);
+  background-size: cover;
+  margin-top: 0vh;
+  position: relative;
+}
+main .years .topyears {
+  width: 100%;
+  height: 130vh;
+  display: flex;
+  flex-wrap: nowrap;
+}
+main .years .topyears > div {
+  width: 50%;
+  padding: 18% 13% 0 15%;
+}
+main .years .topyears > div > h2 {
+  font-size: 110px;
+  font-family: mainbold;
+  font-weight: bold;
+  color: #ab89d6;
+}
+main .years .topyears > div > h2 > strong {
+  font-size: 200px;
+  font-weight: 100;
+}
+main .years .topyears > div > h2:nth-of-type(2) {
+  margin-top: -30%;
+  color: #f1f3f4;
+}
+main .years .topyears > div > p {
+  font-size: 20px;
+  color: rgba(241, 243, 244, 0.6235294118);
+  margin-top: 10%;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+main .years .topyears > figure {
+  width: 70%;
+  position: relative;
+  margin-top: 10%;
+}
+main .years .topyears > figure > img:nth-of-type(1) {
+  width: 80%;
+  height: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 15%;
+  transform: rotate(15deg);
+}
+main .years .topyears > figure > img:nth-of-type(2) {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 57vh;
+  right: 51%;
+}
+main .years .topyears > figure > figure {
+  position: absolute;
+  width: 260px;
+  height: 110px;
+  top: 19vh;
+  right: 5%;
+  z-index: 999;
+}
+main .years .topyears > figure > figure > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: rotate(28deg);
+}
+main .years .topyears > figure > figure > p {
+  position: absolute;
+  transform: rotate(28deg);
+  top: 36%;
+  left: 10%;
+  font-family: mainregular;
+  font-size: 20px;
+  color: #254470;
+}
+main .years .bluegrass {
+  position: absolute;
+  width: 800px;
+  height: 800px;
+  right: -37%;
+  top: -2vh;
+  animation: bottle infinite linear alternate 1.5s;
+}
+main .years .bluegrass > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .years .insidepearl {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  position: relative;
+}
+main .years .insidepearl > figure {
+  width: 70%;
+  height: 50%;
+  position: relative;
+  padding-right: 4%;
+}
+main .years .insidepearl > figure > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .years .insidepearl > figure > div {
+  position: absolute;
+  top: 10vh;
+  right: 42%;
+}
+main .years .insidepearl > figure > div > div > h4 {
+  font-family: mainregular;
+  font-size: 40px;
+  letter-spacing: 3px;
+  color: #254470;
+  font-weight: 300;
+}
+main .years .insidepearl > figure > div > div > p:nth-of-type(1) {
+  margin-top: 7%;
+  font-family: mainregular;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #254470;
+}
+main .years .insidepearl > figure > div > div > p:nth-of-type(2) {
+  font-family: mainregular;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #254470;
+}
+main .years .insidepearl > figure > div > p {
+  position: absolute;
+  width: 150px;
+  color: #ab89d6;
+  font-size: 18px;
+  font-weight: bold;
+  top: 4vh;
+  right: -58%;
+}
+main .years .insidepearl > img {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  top: 14vh;
+  right: -10%;
+}
+main .years .insidepearl > img > img {
+  width: 100%;
+  height: 100%;
+}
+main .years .titleyears {
+  width: 100%;
+  height: 50vh;
+  margin-top: -5%;
+}
+main .years .titleyears .titleY1 {
+  margin-top: 135px;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-wrap: nowrap;
+}
+main .years .titleyears .titleY1 > p {
+  width: 100px;
+  height: 170px;
+  margin-left: -30%;
+  color: #caa2fe;
+}
+main .years .titleyears .titleY1 > h2 {
+  width: 700px;
+  height: 280px;
+  font-family: mainbold;
+  font-size: 90px;
+  color: #f1f3f4;
+  letter-spacing: 5px;
+}
+main .years .titleyears .titleY1 > h2 > strong {
+  font-size: 160px;
+  font-weight: 100;
+}
+main .years .titleyears .titleY2 {
+  width: 100%;
+  height: 100px;
+  font-size: 90px;
+  font-family: mainbold;
+  padding-left: 30%;
+  margin-top: -11%;
+  letter-spacing: 5px;
+  color: #caa2fe;
+}
+main .years .titleyears .titleY2 > strong {
+  font-size: 160px;
+  font-weight: 100;
+}
+main .years .text {
+  width: 100%;
+  height: 30vh;
+  margin-top: -5%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+main .years .text > div {
+  padding-right: 20%;
+  width: 570px;
+  font-size: 15px;
+  color: #f4f6fa;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+main .years .text > div > h6 {
+  font-size: 22px;
+}
+main .years .text > div > p {
+  margin-top: 8%;
+  line-height: 20px;
+}
+main .years .end {
+  position: absolute;
+  width: 100%;
+  height: 70vh;
+  bottom: 160px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+main .years .end > figure:nth-of-type(1) {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .years .end > figure:nth-of-type(1) > img {
+  width: 300px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .years .end > figure:nth-of-type(2) {
+  width: 30%;
+  margin-left: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  position: relative;
+}
+main .years .end > figure:nth-of-type(2) > * {
+  width: 100%;
+}
+main .years .end > figure:nth-of-type(2) > p {
+  text-align: center;
+  height: 10px;
+  position: absolute;
+  top: 80px;
+  font-size: 15px;
+  color: #caa2fe;
+}
+main .years .end > figure:nth-of-type(2) > img {
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .years .end > div {
+  width: 35%;
+  width: 320px;
+  font-size: 14px;
+  color: #f4f6fa;
+  margin-top: 180px;
+  margin-left: 20px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+main .years .end > div > h6 {
+  font-size: 22px;
+}
+main .years .end > div > p {
+  margin-top: 8%;
+  line-height: 20px;
+}
+main .toppic3 {
+  position: absolute;
+  top: 1195vh;
+  left: -2%;
+}
+main .greengrassyear {
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  left: -19%;
+  top: 260vh;
+  animation: bottle infinite linear alternate 2s;
+}
+main .greengrassyear > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .manyear {
+  width: 700px;
+  height: 700px;
+  position: absolute;
+  top: 255vh;
+  left: 1%;
+}
+main .manyear > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .bubble7 {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  position: absolute;
+  top: 255vh;
+  left: 45%;
+}
+main .bubble7 > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .bubble8 {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 275vh;
+  left: 40%;
+}
+main .bubble8 > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .bubble9 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 298vh;
+  left: 43%;
+}
+main .bubble9 > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .starsyaer {
+  position: absolute;
+  height: 240px;
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+  right: -17%;
+}
+main .starsyaer > div {
+  width: 18%;
+  height: 100%;
+  margin: 2% 34% 0 33%;
+}
+main .starsyaer > div > h4 {
+  white-space: pre-line;
+  color: #475264;
+  font-size: 20px;
+}
+main .starsyaer > div > p {
+  margin-top: 20px;
+  color: rgba(71, 82, 100, 0.9333333333);
+  font-size: 15px;
+}
+main .starsyaer > figure {
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 10%;
+}
+main .starsyaer > figure > img {
+  width: 40%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .starsyaer > img {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  right: 18%;
+  top: 50%;
+  animation: star infinite 10s;
+}
+@keyframes star {
+  0% {
+    transform: rotate(0deg);
+  }
+  0% {
+    transform: rotate(360deg);
+  }
+}
+main .fishyear {
+  position: absolute;
+  top: 160vh;
+  transform: rotate(-40deg);
+  width: 150px;
+  height: 100px;
+  left: -10%;
+  animation: fishyear infinite 40s;
+}
+main .fishyear > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 999;
+}
+@keyframes fishyear {
+  0% {
+    left: -10%;
+    top: 160vh;
+  }
+  100% {
+    left: 110%;
+    top: -40vh;
+  }
+}
+main .whiteround {
+  width: 100%;
+  height: 170vh;
+  background-color: #f1f3f4;
+}
+main .whiteround .titlewhite {
+  width: 100%;
+  height: 50vh;
+  margin-top: -5%;
+}
+main .whiteround .titlewhite .titler1 {
+  margin-top: 70px;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-wrap: nowrap;
+}
+main .whiteround .titlewhite .titler1 > p {
+  width: 100px;
+  height: 170px;
+  margin-left: -2%;
+  color: #caa2fe;
+}
+main .whiteround .titlewhite .titler1 > h2 {
+  width: 1000px;
+  height: 280px;
+  font-family: mainbold;
+  font-size: 90px;
+  color: #caa2fe;
+  letter-spacing: 5px;
+}
+main .whiteround .titlewhite .titler1 > h2 > strong {
+  font-size: 160px;
+  font-weight: 100;
+}
+main .whiteround .titlewhite .titler2 {
+  width: 100%;
+  height: 100px;
+  font-size: 90px;
+  font-family: mainbold;
+  padding-left: 32%;
+  margin-top: -11%;
+  letter-spacing: 5px;
+  color: #254470;
+  z-index: 999;
+}
+main .whiteround .titlewhite .titler2 > strong {
+  font-size: 160px;
+  font-weight: 100;
+}
+main .whiteround .rowwhite {
+  width: 150%;
+  height: 50vh;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-left: -47%;
+}
+main .whiteround .rowwhite > div {
+  width: 30%;
+  position: relative;
+}
+main .whiteround .rowwhite > div > figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  position: relative;
+}
+main .whiteround .rowwhite > div > figure > img {
+  width: 80%;
+  height: 30%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .whiteround .rowwhite > div > figure > p {
+  position: absolute;
+  font-size: 17px;
+  width: 70%;
+  height: 30%;
+  letter-spacing: 0;
+  top: 42%;
+}
+main .whiteround .rowwhite > div > img {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  left: 45%;
+  top: 20%;
+  border-radius: 50%;
+}
+main .whiteround .rowwhite > p {
+  width: 30%;
+  font-size: 22px;
+  letter-spacing: normal;
+  padding: 0 2%;
+  margin-top: 7%;
+  color: rgba(71, 82, 100, 0.8392156863);
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+main .whiteround .rowwhite > figure {
+  width: 40%;
+  margin-top: -10%;
+  z-index: 0;
+  margin-left: -3%;
+}
+main .whiteround .rowwhite > figure > img {
+  width: 123%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: rotateY(180deg);
+}
+main .whiteround .scroll {
+  margin-left: -47%;
+  height: 90vh;
+  width: 147%;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  padding-left: 30%;
+}
+main .whiteround .scroll > * {
+  margin: 0 5%;
+  min-width: 320px;
+  height: 50%;
+  position: relative;
+  margin-top: 3%;
+}
+main .whiteround .scroll > *:last-child {
+  margin-right: 0;
+}
+main .whiteround .scroll > * > figure {
+  width: 100%;
+  height: 110%;
+  position: relative;
+}
+main .whiteround .scroll > * > figure > img {
+  width: 90%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .whiteround .scroll > * > figure > div {
+  position: absolute;
+  color: #475264;
+  letter-spacing: normal;
+  top: 30%;
+  left: 20%;
+}
+main .whiteround .scroll > * > figure > div > h6 {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 20px;
+}
+main .whiteround .scroll > * > figure > div > p {
+  margin-top: 20px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 15px;
+}
+main .whiteround .scroll > * > img {
+  position: absolute;
+}
+main .whiteround .scroll > * > img:nth-of-type(1) {
+  width: 170px;
+  height: 170px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  bottom: -15%;
+  left: 20%;
+}
+main .whiteround .scroll > * > img:nth-of-type(2) {
+  width: 90px;
+  height: 90px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  top: 0;
+  right: 10%;
+}
+main .whiteround .scroll > *:nth-of-type(even) {
+  margin-top: 13%;
+}
+main .bottompic2 {
+  position: absolute;
+  top: 1395vh;
+  left: -10%;
+  transform: rotateZ(180deg);
+  z-index: 999;
+}
+main .footer {
+  width: 100%;
+  height: 140vh;
+  margin-top: 10vh;
+  padding-top: 30vh;
+  position: relative;
+  background-image: url(../img/__1\ \(2\).jpg);
+}
+main .footer > h4 {
+  font-size: 20px;
+  margin-left: 15%;
+  color: #f1f3f4;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 400;
+}
+main .footer .titlefooter {
+  width: 100%;
+  margin-top: -4%;
+}
+main .footer .titlefooter .titlef1 {
+  position: relative;
+  width: 98%;
+  text-align: center;
+  color: #caa2fe;
+  font-size: 80px;
+  font-family: mainbold;
+  margin-left: -13%;
+  z-index: 2;
+  letter-spacing: 10px;
+}
+main .footer .titlefooter .titlef1 > strong {
+  font-size: 160px;
+  font-weight: 100;
+}
+main .footer .titlefooter .titlef2 {
+  position: relative;
+  z-index: 2;
+  width: 67%;
+  text-align: center;
+  color: #f1f3f4;
+  font-size: 80px;
+  font-family: mainbold;
+  margin-left: 13%;
+  margin-top: -85px;
+  letter-spacing: 10px;
+}
+main .footer .titlefooter .titlef2 > strong {
+  font-size: 160px;
+  font-weight: 100;
+}
+main .footer > div:nth-of-type(2) {
+  width: 100%;
+  height: 30vh;
+  margin-top: 5%;
+  padding: 0 10%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+main .footer > div:nth-of-type(2) > div:nth-last-of-type(1) {
+  width: 26%;
+  height: 100%;
+  margin-right: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  color: #f1f3f4;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+main .footer > div:nth-of-type(2) > div:nth-last-of-type(2) {
+  width: 30%;
+  height: 100%;
+  padding: 5%;
+  display: flex;
+  flex-wrap: wrap;
+}
+main .footer > div:nth-of-type(2) > div:nth-last-of-type(2) > * {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+main .footer > div:nth-of-type(2) > div:nth-last-of-type(2) > * > img {
+  width: 40px;
+  height: 40px;
+}
+main .footer > div:nth-of-type(2) > div:nth-last-of-type(2) > * > a {
+  margin-left: 10px;
+  margin-top: 8px;
+  text-decoration: none;
+  color: #f1f3f4;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+main .footer > span {
+  position: absolute;
+}
+main .footer .mountainfooter {
+  width: 100%;
+  height: 25vh;
+  bottom: 0.4vh;
+}
+main .footer .mountainfooter > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .footer .personfooter1 {
+  position: absolute;
+  width: 300px;
+  height: 340px;
+  top: 80vh;
+  left: 38%;
+  z-index: 999;
+}
+main .footer .personfooter1 > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .footer .greengrassfooter2 {
+  position: absolute;
+  width: 200px;
+  height: 300px;
+  top: 76vh;
+  left: 33%;
+  animation: bottle infinite linear alternate 1.5s;
+}
+main .footer .greengrassfooter2 > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .footer .greengrassfooter1 {
+  position: absolute;
+  width: 500px;
+  height: 600px;
+  top: 45vh;
+  margin-left: -18%;
+  animation: bottle infinite linear alternate 1.5s;
+}
+main .footer .greengrassfooter1 > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .footer .bluegrassfooter1 {
+  position: absolute;
+  width: 450px;
+  height: 550px;
+  top: 20vh;
+  right: -10%;
+  animation: bottle infinite linear alternate 1.5s;
+}
+main .footer .bluegrassfooter1 > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .footer .textfooter {
+  position: absolute;
+  width: 280px;
+  height: auto;
+  transform: rotate(30deg);
+  top: 43vh;
+  right: 5%;
+}
+main .footer .textfooter > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .footer .textfooter > p {
+  position: absolute;
+  font-family: mainregular;
+  font-size: 25px;
+  top: 30%;
+  left: 20%;
+}/*# sourceMappingURL=master.css.map */

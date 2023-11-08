@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+    width: 0px;
+}
+
 @font-face {
     font-family: 'mainregular';
     src: url(../font/static/DancingScript-Regular.ttf);

@@ -47,35 +47,24 @@ let manyear = document.querySelector('.manyear')
 let cloudlast = document.querySelector('.cloudlast')
 
 const scrollableElement = document.querySelector('.scroll');
-let isHorizontalScroll = true;
+const scrollableRect = scrollableElement.getBoundingClientRect();
 
 scrollableElement.addEventListener('wheel', (e) => {
-    if (isHorizontalScroll) {
-        e.preventDefault();
-        scrollableElement.scrollLeft += (e.deltaY + e.deltaX);
+    e.preventDefault();
+    scrollableElement.scrollLeft += (e.deltaY + e.deltaX);
 
-        // Check if the horizontal scroll has reached the end
-        if (scrollableElement.scrollLeft >= (scrollableElement.scrollWidth - scrollableElement.clientWidth)) {
-            isHorizontalScroll = false;
-            enableVerticalScroll();
-        }
-    } else {
-        if (e.deltaY < 0) {
-            if (scrollableElement.scrollTop === 0) {
-                isHorizontalScroll = true;
-                e.preventDefault();
-            }
-        }
+    if (scrollableElement.scrollLeft >= (scrollableElement.scrollWidth - scrollableElement.clientWidth) && e.deltaX > 0) {
+        // At the end of the scrollable div, scroll the whole page down
+        window.scrollBy({
+            top: window.innerHeight,
+            behavior: 'smooth'
+        });
     }
 });
 
-function enableVerticalScroll() {
-    // Add logic to enable vertical scrolling for the whole page
-}
-
 window.addEventListener('scroll', ()=> {
     let Sctop = window.scrollY;
-    console.log(scrollableElement.scrollTop)
+    console.log(window.innerHeight)
     if (Sctop == 0) {
         MovingPearl.style.top =  '46%'
     }
@@ -85,8 +74,8 @@ window.addEventListener('scroll', ()=> {
         MovingPearl.style.left =  MovingPearlleft + Sctop / 17.1 + '%'
         MovingPearl.style.top =  '46%'
         // MovingCloud.style.left = "-100%"
-        if (Sctop > 220) {
-            MovingPearl.style.top =  17 + Sctop / 7 + '%'
+        if (Sctop > 170) {
+            MovingPearl.style.top =  21 + Sctop / 7 + '%'
         }
     }
     else if (Sctop > 540 && Sctop < 880) {
@@ -118,29 +107,30 @@ window.addEventListener('scroll', ()=> {
     else if (Sctop >2500 && Sctop < 2830) {
         CloudCrown1.style.left = -261 + Sctop/11.6 + "%"
         CloudCrown2.style.left = 442 - Sctop/7.6 + "%"
-        stone1.style.top = -400 + Sctop/6.05 + "vh"
-        stone1.style.left = -10 + Sctop/48.7 + "%"
-        stone2.style.top = -300 + Sctop/7.644 + "vh"
-        stone2.style.left = 80 - Sctop/82.43 + "%"
-        stone3.style.top = -370 + Sctop/6.353 + "vh"
-        stone3.style.left = -10 + Sctop/52.7 + "%"
-        stone4.style.top = -420 + Sctop/5.74 + "vh"
-        stone4.style.left = 100 - Sctop/50.76 + "%"
-        stone5.style.top = -320 + Sctop/7.299 + "vh"
-        stone5.style.left = 0 + Sctop/56.15 + "%"
+        stone1.style.top = -400.5 + Sctop/6.05 + "vh"
+        stone1.style.left = -13.25 + Sctop/48.7 + "%"
+        stone2.style.top = -302.6 + Sctop/7.644 + "vh"
+        stone2.style.left = 81.2 - Sctop/82.43 + "%"
+        stone3.style.top = -295.6 + Sctop/7.644 + "vh"
+        stone3.style.left = 74.9 - Sctop/82.43 + "%"
+        stone4.style.top = -420.9 + Sctop/5.74 + "vh"
+        stone4.style.left = 97 - Sctop/50.76 + "%"
+        stone5.style.top = -317.5 + Sctop/7.299 + "vh"
+        stone5.style.left = -7.6 + Sctop/56.15 + "%"
         stone6.style.top = -340 + Sctop/6.927 + "vh"
-        stone6.style.left = 120 - Sctop/41.9 + "%"
-        stone7.style.top = -410 + Sctop/5.88 + "vh"
-        stone7.style.left = -100 + Sctop/18.36 + "%"
-        stone8.style.top = -380 + Sctop/6.19 + "vh"
-        stone8.style.left = 140 - Sctop/32.5 + "%"
-        stone9.style.top = -400 + Sctop/5.89 + "vh"
-        stone9.style.left = -100 + Sctop/19.31 + "%"
+        stone6.style.left = 116.3 - Sctop/41.9 + "%"
+        stone7.style.top = -410.5 + Sctop/5.88 + "vh"
+        stone7.style.left = -103.7 + Sctop/18.36 + "%"
+        stone8.style.top = -381.1 + Sctop/6.19 + "vh"
+        stone8.style.left = 136.2 - Sctop/32.5 + "%"
+        stone9.style.top = -401.7 + Sctop/5.89 + "vh"
+        stone9.style.left = -103.3 + Sctop/19.31 + "%"
         stone10.style.top = -390 + Sctop/6.06 + "vh"
-        stone10.style.left = 160 - Sctop/25.56 + "%"
-        stone11.style.top = -420 + Sctop/5.70 + "vh"
-        stone11.style.left = -120 + Sctop/16.59 + "%"
-        stone12.style.top = -300 + Sctop/7.48 + "vh"
+        stone10.style.left = 157.3 - Sctop/25.56 + "%"
+        stone11.style.top = -421.2 + Sctop/5.70 + "vh"
+        stone11.style.left = -123.7 + Sctop/16.59 + "%"
+        stone12.style.top = -302.7 + Sctop/7.48 + "vh"
+        stone12.style.left = -124.7 + Sctop/16.59 + "%"
     }
     else if (Sctop>700 && Sctop<2000) {
         bubble1.style.top =  5100 - Sctop*2 + "px"
@@ -155,15 +145,17 @@ window.addEventListener('scroll', ()=> {
         bubble4.style.top =  2000 - Sctop/2.1 + "px"
         if (Sctop>3600 && Sctop<4200) {
             console.log("djkfnkjedfkjen = " +boll.style.top)
-            boll.style.top = -1700 + Sctop/1.7 + "px"
+            boll.style.top = -3480 + Sctop/1 + "px"
             boll.style.right = -5180 + Sctop*1.5 + "px"
-            fish3.style.top = -1490 + Sctop/2 + "px"
-            fish3.style.left = -1150 + Sctop/3 + "px"
+            if (Sctop>4000 && Sctop<4200) {
+                fish3.style.top = -5200 + Sctop*1.4 + "px"
+                fish3.style.left = -1530 + Sctop/2.5 + "px"
+            }
         }
     }
-    else if (Sctop >4500 && Sctop < 5000) {
-        seaanimal.style.bottom = -5000 + Sctop + "px"
-        seaanimal.style.left = -4600 + Sctop + "px"
+    else if (Sctop >4800 && Sctop < 5300) {
+        seaanimal.style.bottom = -5300 + Sctop + "px"
+        seaanimal.style.left = -5000 + Sctop + "px"
     }
     else if (Sctop >6300 && Sctop<6800) {
         bubble7.style.top = -1040 + Sctop/2.3 + "px"
